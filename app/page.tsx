@@ -24,7 +24,7 @@ export default function Portfolio() {
     document.documentElement.classList.toggle("dark", isDark)
   }, [isDark])
 
-  const skills = ["PHP", "Java", "Python", "JavaScript", "Spring Boot", "Django", "SQL", "Docker"]
+  const skills = ["PHP", "Java", "Python", "JavaScript", "Typescript", "SQL"]
 
   const experiences = [
     {
@@ -32,7 +32,7 @@ export default function Portfolio() {
       company: "CriarD Technology",
       period: "Jun. 2025 - Presente",
       description:
-        "Responsável pelo desenvolvimento de ponta a ponta de soluções de software para análise e gestão de dados. Criei APIs em Python e PHP para interagir com bancos de dados MySQL e SQL Server, desenvolvendo queries complexas para extrair insights de negócio, como a performance de vendas em relação aos orçamentos. Realizei a manutenção e depuração de sistemas em C#, garantindo a estabilidade e a implementação de novas funcionalidades.",
+        "Atuei no desenvolvimento de plataformas web e aplicações para o usuário final, assim como em sistemas internos para empresas de médio e alto porte, utilizando tecnologias modernas e robustas. Participei da manutenção e desenvolvimento de soluções completas para negócios com PHP, PDO e Laravel, seguindo as melhores práticas de mercado e garantindo eficiência e qualidade no software entregue."
     },
     {
       title: "Software Developer",
@@ -45,25 +45,11 @@ export default function Portfolio() {
 
   const projects = [
     {
-      title: "Freeming",
-      description:
-        "Plataforma gratuita para assistir filmes online. Encontre seus filmes favoritos e assista gratuitamente.",
-      github: "https://www.github.com/dnsouzadev/freeming",
-      demo: null,
-    },
-    {
       title: "Social Network",
       description:
         "Uma aplicação de rede social desenvolvida em Java. Este projeto tem como objetivo simular funcionalidades de uma rede social, com cadastro de usuários, amizades, likes e comentarios e com uma autenticação realizada utilizando jwt-token.",
       github: "https://www.github.com/dnsouzadev/social-network",
       demo: null,
-    },
-    {
-      title: "ClimaCast",
-      description:
-        "ClimaCast é uma aplicação web intuitiva para consulta de previsão do tempo. Desenvolvida com tecnologias modernas, oferece informações detalhadas sobre o clima de qualquer cidade, com uma interface limpa e responsiva.",
-      github: "https://github.com/dnsouzadev/ClimaCast",
-      demo: "https://clima-cast-blue.vercel.app/",
     },
   ]
 
@@ -112,7 +98,7 @@ export default function Portfolio() {
               </h1>
               <div className="flex items-center justify-center gap-2 text-lg text-muted-foreground mb-8">
                 <Code className="w-5 h-5" />
-                <span>desenvolvedor de software, 22 anos</span>
+                <span>desenvolvedor de software, 23 anos</span>
                 <MapPin className="w-4 h-4 ml-2" />
                 <span>Macaé/RJ</span>
               </div>
@@ -132,13 +118,6 @@ export default function Portfolio() {
               >
                 <Github className="w-4 h-4" />
                 <span className="text-sm">GitHub</span>
-              </a>
-              <a
-                href="https://www.x.com/dnsouzadev"
-                className="flex items-center gap-2 px-4 py-2 rounded-full border border-border hover:bg-muted transition-all duration-300 hover:scale-105"
-              >
-                <Twitter className="w-4 h-4" />
-                <span className="text-sm">X</span>
               </a>
             </div>
           </div>
